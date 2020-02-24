@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Skill</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+<body>
+    <h1>Add New Skill</h1>
+    <form action="/skills" method="POST" autocomplete="off">
+        <label>Skill: 
+            <input type="text" name="skill"></label><br>
+        <label>Level: 
+            <input type="text" name="level"></label><br>
+        <label>Learned:
+            <input type="checkbox" name="learned"></label><br>
+
+            <button type="submit">Save New Skill</button>
+    </form>
+</body>
+</html>

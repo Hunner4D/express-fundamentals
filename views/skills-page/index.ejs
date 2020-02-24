@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>skills index</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+</head>
+
+<body>
+    <div>
+        <h1><%= devName %>'s skills index</h1>
+        <ul>
+            <% allSkills.forEach(function(s, idx) { %>
+            <li>
+                <div class="f-left"><a href="/skills/<%=idx%>"><%= s.skill %></a></div>
+                <p>:</p>
+                <div class="f-right"><%= s.level %>
+                /
+                <%= s.learned ? 'learned' : 'work in progress' %></div>
+            </li>
+            <% }); %>
+        </ul>
+    </div><br><br>
+        <a class="nav" href="skills/new">Add Dev Skill</a>
+        <a class="nav" href="/">Home</a>
+
+</body>
+
+</html>
